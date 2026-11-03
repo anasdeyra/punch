@@ -56,6 +56,17 @@ L'installateur :
 > Avec `--systemd`, le timer `--user` a besoin du *linger* :
 > `sudo loginctl enable-linger $USER`.
 
+### Publier le dépôt
+
+```bash
+git remote add origin git@github.com:<vous>/pointage-autopunch.git
+git push -u origin main
+```
+
+Pensez à ajuster `REPO_URL_DEFAULT` en tête de `install.sh` si votre compte
+GitHub n'est pas celui utilisé par défaut : c'est cette URL qui permet
+l'installation via `curl | bash`.
+
 ---
 
 ## Utilisation
