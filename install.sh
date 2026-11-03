@@ -2,12 +2,12 @@
 #
 # Pointage automatique — installation en UNE commande.
 #
-#   git clone https://github.com/<vous>/pointage-autopunch.git
-#   cd pointage-autopunch && ./install.sh
+#   git clone git@github.com:anasdeyra/punch.git
+#   cd punch && ./install.sh
 #
 # ou, sans cloner (une seule ligne) :
 #
-#   curl -fsSL https://raw.githubusercontent.com/<vous>/pointage-autopunch/main/install.sh | bash -s -- \
+#   curl -fsSL https://raw.githubusercontent.com/anasdeyra/punch/master/install.sh | bash -s -- \
 #       --identifier 11 --password 'MOT_DE_PASSE'
 #
 # Cible : Raspberry Pi (Debian / Raspberry Pi OS), 24/7, sans interface
@@ -16,9 +16,9 @@
 set -euo pipefail
 
 # --------------------------------------------------------------------------
-# A AJUSTER si vous hebergez le depot ailleurs
+# Depot par defaut. Ajustez REPO_URL_DEFAULT si vous hebergez le depot ailleurs.
 # --------------------------------------------------------------------------
-REPO_URL_DEFAULT="https://raw.githubusercontent.com/anasdayra/pointage-autopunch/main"
+REPO_URL_DEFAULT="https://raw.githubusercontent.com/anasdeyra/punch/master"
 
 SHARE_DIR="${HOME}/.local/share/pointage"
 BIN_DIR="${HOME}/.local/bin"

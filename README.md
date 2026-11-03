@@ -1,4 +1,4 @@
-# pointage-autopunch
+# punch — pointage automatique
 
 Pointe automatiquement les pointages de la journée sur
 **pointage-zkteco.vercel.app** — pour ne plus les oublier.
@@ -19,15 +19,15 @@ Python 3.9+ suffit, le fuseau horaire du bureau est géré par la config
 Sur le Raspberry Pi :
 
 ```bash
-git clone https://github.com/<vous>/pointage-autopunch.git
-cd pointage-autopunch
+git clone git@github.com:anasdeyra/punch.git
+cd punch
 ./install.sh --identifier 11 --password 'VOTRE_MOT_DE_PASSE'
 ```
 
 Ou sans cloner :
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<vous>/pointage-autopunch/main/install.sh \
+curl -fsSL https://raw.githubusercontent.com/anasdeyra/punch/master/install.sh \
   | bash -s -- --identifier 11 --password 'VOTRE_MOT_DE_PASSE'
 ```
 
@@ -59,8 +59,8 @@ L'installateur :
 ### Publier le dépôt
 
 ```bash
-git remote add origin git@github.com:<vous>/pointage-autopunch.git
-git push -u origin main
+git remote add origin git@github.com:anasdeyra/punch.git
+git push -u origin master
 ```
 
 Pensez à ajuster `REPO_URL_DEFAULT` en tête de `install.sh` si votre compte
