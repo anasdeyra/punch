@@ -1,0 +1,21 @@
+# Identifiants personnels — ne jamais commiter
+config.json
+config.local.json
+*.local.json
+
+# Etat / logs
+*.log
+state.json
+*.lock
+*.pid
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Divers
+.DS_Store
+*.swp

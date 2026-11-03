@@ -1,0 +1,7 @@
+[Unit]
+Description=Pointage automatique (pointage-zkteco)
+
+[Service]
+Type=oneshot
+ExecStart=@BIN@/pointage tick
+WorkingDirectory=@STATE_DIR@

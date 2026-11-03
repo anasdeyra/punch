@@ -1,0 +1,24 @@
+{
+  "base_url": "https://pointage-zkteco.vercel.app",
+  "identifier": "VOTRE_IDENTIFIANT",
+  "password": "VOTRE_MOT_DE_PASSE",
+  "timezone": "Africa/Tunis",
+
+  "schedule": {
+    "arrival": "",
+    "pause_start": "",
+    "pause_end": ""
+  },
+
+  "arrival_grace_minutes": 0,
+
+  "auto_punch": {
+    "arrival": true,
+    "pause_start": true,
+    "pause_end": true,
+    "departure": true
+  },
+
+  "notify": false,
+  "poll_minutes": 5
+}

@@ -1,0 +1,10 @@
+[Unit]
+Description=Declenche le pointage automatique toutes les @INTERVAL@ minutes
+
+[Timer]
+OnCalendar=*:0/@INTERVAL@
+Persistent=true
+AccuracySec=30s
+
+[Install]
+WantedBy=timers.target
